@@ -8,7 +8,7 @@ const ProductInfo = ({ productInfo }) => {
     <div className="flex flex-col gap-5">
       <h2 className="text-4xl font-semibold">{productInfo.name}</h2>
       <p className="text-xl font-semibold">
-        {new Intl.NumberFormat("vi-VN", { style: "currency", currency: "VND" }).format(productInfo.price)}
+        {productInfo.price}
       </p>
       <p className="text-base text-gray-600">{productInfo.description}</p>
 
@@ -35,7 +35,6 @@ const ProductInfo = ({ productInfo }) => {
           </div>
         </div>
       </p>
-
     </div>
   );
 };
