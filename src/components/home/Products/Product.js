@@ -40,29 +40,19 @@ const Product = (props) => {
               className="text-[#767676] hover:text-primeColor text-sm font-normal border-b-[1px] border-b-gray-200 hover:border-b-primeColor flex items-center justify-end gap-2 hover:cursor-pointer pb-1 duration-300 w-full"
             >
               Xem chi tiết
-              <span className="text-lg">
-                <MdOutlineLabelImportant />
-              </span>
-            </li>
-            <li className="text-[#767676] hover:text-primeColor text-sm font-normal border-b-[1px] border-b-gray-200 hover:border-b-primeColor flex items-center justify-end gap-2 hover:cursor-pointer pb-1 duration-300 w-full">
-              Liên hệ 
-              <span>
-                <BsSuitHeartFill />
-              </span>
             </li>
           </ul>
         </div>
       </div>
-      <div className="max-w-80 py-6 flex flex-col gap-1 border-[1px] border-t-0 px-4">
+      <div className="max-w-80 py-6 flex flex-col gap-1 border-[5px] border-t-0 px-4">
         <div className="flex items-center justify-between font-titleFont">
           <h2 style={{ fontFamily: "Arial, sans-serif" }} className="text-lg text-primeColor font-bold">
             {props.name}
           </h2>
-          <p className="text-[#767676] text-[14px]">
-            {new Intl.NumberFormat("vi-VN", { style: "currency", currency: "VND" }).format(props.price)}
-          </p>
-
         </div>
+        <p className="text-[#767676] text-[14px]">
+          {props.price}
+        </p>
       </div>
     </div>
   );
