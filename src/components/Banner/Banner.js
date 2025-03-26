@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import {
-  bannerImgOne,
-  bannerImgTwo,
-  bannerImgThree,
+  panner1 ,
+  panner2 ,
+  panner3,
 } from "../../assets/images";
 import Image from "../designLayouts/Image";
 
@@ -106,7 +106,7 @@ const Banner = () => {
       <Slider {...settings}>
         <Link to="/offer">
           <div>
-            <Image imgSrc="https://www.innhanhsieure.com/data/upload/webp/INANDONGPHONG-TET.webp" />
+            <Image imgSrc= "https://www.innhanhsieure.com/data/upload/webp/INANDONGPHONG-TET.webp"/>
           </div>
         </Link>
         <Link to="/offer">
