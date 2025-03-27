@@ -17,6 +17,8 @@ function Items({ currentItems }) {
               name={item.name}
               price={item.price}
               description={item.description}
+              material={item.material}
+              warranty={item.warranty}
             />
           </div>
         ))}
